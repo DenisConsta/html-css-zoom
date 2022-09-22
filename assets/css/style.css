@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+body{
+  font-family: arial;
+}
+
 /* utilities*/
 
 .debug{
@@ -16,7 +20,7 @@
 /* HEADER */
 
 header{
-  height: 60px;
+  height: 55px;
   background-color: black;
   padding: 5px;
 }
@@ -28,24 +32,60 @@ header ul{
   list-style: none;
 }
 
-header ul li{
-  background-color: #2C2C2C;
-  color: #999998;
+header ul li,
+.span-style{
+  background-color: #4A4A4A;
   padding: 5px;
   border-radius: 8px;
+  font-size: .8rem;
+  font-weight: bold;
+  color: white;
 }
-
 
 /* MAIN */
 
 main{
-  height: calc(100vh - 165px);
+  height: calc(100vh - 130px);
   overflow: auto;
+  padding: 20px;
+  background-color: black;
+}
+
+.main-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+}
+
+main .main-wrapper .card{
+  display: inline-block;
+  position: relative;
+
+  width: 240px;
+  height: 140px;
+  margin-bottom: 10px;
+}
+
+main .main-wrapper .card .tag{
+  position: absolute;
+  bottom: 0;
+  left:0;
+  border-radius: 0;
+  background-color: rgba(74, 74, 74, .5);
+  color: white;
+  font-weight: normal;
+}
+
+main .main-wrapper .card img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 /* FOOTER-MENU */
 
-.footer-menu{
-  height: 105px;
-  background-color:turquoise;
+.footer-menu{ 
+  height: 75px;
+  background-color:#222222;
 }
