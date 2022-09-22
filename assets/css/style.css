@@ -86,6 +86,66 @@ main .main-wrapper .card img{
 /* FOOTER-MENU */
 
 .footer-menu{ 
+  min-width: 940px;
   height: 75px;
   background-color:#222222;
+  display: flex;
+  justify-content: space-between;
+}
+
+#left-menu,
+#center-menu {
+  flex-shrink: 0;
+  display: flex;
+  gap: 20px;
+  height: 100%;
+  padding: 10px;
+}
+
+.item-menu{
+  color: white;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.item-menu .fa-solid{
+  font-size: 30px;
+  padding-bottom: 5px;
+  text-align: center;
+}
+
+.item-menu span{
+  font-size: .9rem;
+  font-weight: 400;
+}
+
+#left-menu .item-menu,
+#center-menu .item-menu:nth-child(4){
+  padding-right: 40px;
+}
+
+#left-menu .item-menu::after,
+#center-menu .item-menu:nth-child(4)::after{
+  content: '\f077';
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  display: block;
+  position: absolute;
+  font-size: .8rem;
+  left: 80%;
+  bottom: 50%;
+}
+
+.btn{
+  color: red;
+  background-color: #4A4A4A;  
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.active{
+  color: #4AC700;
 }
