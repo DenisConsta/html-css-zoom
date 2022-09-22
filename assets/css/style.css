@@ -1,0 +1,51 @@
+/* GENERAL */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* utilities*/
+
+.debug{
+  border: 1px solid firebrick;
+  background-color: bisque;
+}
+
+/* HEADER */
+
+header{
+  height: 60px;
+  background-color: black;
+  padding: 5px;
+}
+
+header ul{
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  list-style: none;
+}
+
+header ul li{
+  background-color: #2C2C2C;
+  color: #999998;
+  padding: 5px;
+  border-radius: 8px;
+}
+
+
+/* MAIN */
+
+main{
+  height: calc(100vh - 165px);
+  overflow: auto;
+}
+
+/* FOOTER-MENU */
+
+.footer-menu{
+  height: 105px;
+  background-color:turquoise;
+}
